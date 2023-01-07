@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB - CSS</title>
+    <meta charset="utf-8">
+    <style>
+        .list {
+            color:black;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 60px; text-align: center;
+            margin:0; padding:20px;
+            border-bottom:1px solid gray;
+        }
+        #grid ol {
+            margin:0; padding:20px;
+        }
+        #grid {
+            display:grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #list {
+            border-right:1px solid gray;
+        }
+        #article {
+            padding-left:20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="width:1530px"><a href="home.html" class="list">WEB</a></h1>
+<div id="grid">
+<div id="list">
+    <ol>
+    <li><a href="HTML.html" class="list">HTML</a></li>
+    <li><a href="CSS.html" style="color:red; text-decoration: underline;" class="list">CSS</a></li>
+    <li><a href="JavaScript.html" class="list">JavaScript</a></li>
+    </ol>
+</div>
+<div id="article">
+    <h2>What is CSS?</h2>
+    <p>
+        디자인하는 HTML과는 다른 새로운 언어<br>
+        따라서 HTML에게 CSS를 인식하게 하는 언어가 필요<br>
+        그것이 style tag (=HTML아 여기 안에있는 언어는 CSS문법으로 해석해라~ 라는 뜻)<br>
+        <ol>
+            <h3>웹페이지에 CSS를 삽입하는 방법</h3>
+            <li>style tag</li>
+            <li>style 속성</li>
+        </ol>
+        CSS를 HTML tag에 (style="") 형식으로 추가할 수 도 있음<br>
+        + style="" 은 HTML의 속성<br>
+        <img src="Pictures/selector & declaration.png" width="400px"><br>
+        빨간색은 selector(선택자), 노란색은 declaration(효과, 선언)<br>
+        selector 는 효과를 어디에 줄지 "선택"<br>
+        declaration은 효과의 "내용"<br>
+        ;은 구분자로 사용<br>
+        여기서 color 는 property(속성), black은 value(값)
+    </p>
+    <p>
+        + 코딩을 잘하는 법 중 하나는 중복의 제거<br>
+        1억개의 a tag의 색을 바꿔야한다면? - 일괄적으로 바꿀 수 있는 방법이 좋은 방법임<br>
+        + HTML에 문법으로 디자인을 추가하면 정보로서의 가치가 줄어듦<br>
+        ex) 검색시 디자인에 관한것을 무시하고 HTML만을 검색하게 만들 수 있게 하는것이 CSS<br>
+        + <a href="https://caniuse.com/" target="_blank">can i use.com</a><br>
+        이 사이티는 코드를 검색하여서 이 코드를 사용해도 되는지 어디에서 얼마나 작동하는지 알려주는 기능을 하는 사이트<br>
+
+    </p>
+    <a href="./box.html">About Box-model</a><br>
+    <a href="./grid.html">About Grid-model</a>
+    </div>
+</div>
+</body>
+</html>
